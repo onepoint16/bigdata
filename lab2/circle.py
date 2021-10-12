@@ -12,6 +12,16 @@ class Circle:
     def toString(self):
         return "(centre = "+ str(self.centre) + " ,  radius = " + str(self.radius) + " area = " + str(self.area) + " )"
 
+    def __init__(self,centre,radius):
+        self.centre = centre
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+    def toString(self):
+        return "Centre at " + self.centre.toString() + ", radius=" + str(self.radius)
+
 c = Circle(10,10)
 
 print(c.toString())
